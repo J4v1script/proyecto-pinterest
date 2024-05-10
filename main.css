@@ -3,6 +3,8 @@
     margin: 0px;
     padding: 0px;
     font-size: 16px;
+    color: rgb(33, 25, 34);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
@@ -19,45 +21,424 @@
 }
 
 main {
-    height: 200vh;
+    height: 100vh;
     width: 100%;
-    background-color: lightskyblue;
+    
 }
+
 
 nav {
     height: 5rem;
-    background-color: darkgray;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    
 }
 
-.navbar-navegacion {
-    min-width: 18rem;
-    background-color: aliceblue;
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    
+}
+
+nav ul li{
+    margin: 16px;
+    color: rgb(17, 17, 17);
+    font-weight: 620;
+    padding-top: 8px;
+}
+
+.navbar-navegacion ion-icon {
+    color: red;
+    font-size: 28px;
+    padding-left: 7px;
+}
+
+#Inicio{
+    align-content: center;
+    padding: 12px 15px;
+    margin: auto;
+    border-radius: 2rem;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 600;
+    
+    
 }
 
 .navbar-busqueda {
     flex-grow: 1;
-    background-color: bisque;
+    min-width: 5rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    
 }
 
-.navbar-perfil{
-    background-color: chartreuse;
-    min-width: 18rem;
+.navbar-input-buscar {
+    margin-inline: 0.8rem;
+    padding-inline-start: 0.8rem;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    border-radius: 1.5rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+.navbar-input-buscar input{
+    height: 2rem;
+    flex-grow: 3;
+    margin-inline-end: 1rem;
+    margin-inline-start: .5rem;
+    border-style: none;
+    background-color: transparent;
+    margin-top: auto;
+    margin-bottom: auto;    
+}
+
+.navbar-input-buscar ion-icon {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;   
+    --ionicon-stroke-width: 90px;
+    color: rgb(118 118 118);
+}
+
+.navbar-input-buscar input:focus-visible{
+    outline: none;
+}
+
+.navbar-perfil ion-icon {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;   
+    --ionicon-stroke-width: 90px;
+    color: rgb(118 118 118);
+    /* min-width: 18rem; */
+}
+
+
+
+
 
 .pin_contenedor{
-    background-color: whitesmoke;
     width: 100%;
-    /* position: absolute; */
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--pin_width));
-    grid-template-rows: var(--row_increment);
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
 }
 
 .pin {
+    position: relative;
     margin: 1rem 0.8rem;
     border-radius: var(--pin_radius);
     background-color: lightgrey;
+}
+
+/*PIN IMAGEN*/
+
+.pin_contenido {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    
+}
+
+.pin_contenido_p1{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/ea/cd/ff/eacdff1ad46e3270c1af80f0ff7d0880.jpg);
+}
+
+.pin_contenido_m1{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/d1/70/59/d17059c5c47d459f7acd44b602f67744.jpg);
+}
+
+.pin_contenido_g1{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/19/46/26/1946264ec6b512a5d2b042b6f79b1151.jpg);
+}
+
+.pin_contenido_p2{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/43/de/1f/43de1f0c654b47eb2d5349b49ea3126a.jpg);
+}
+
+.pin_contenido_m2{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/05/0c/23/050c23cbe21fd40d5cc7736fae4fbf29.jpg);
+}
+
+.pin_contenido_g2{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/af/a1/bb/afa1bb7c288c99ba1b66f025ece278a8.jpg);
+}
+
+
+.pin_contenido_p3{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/d8/55/64/d85564fe4b01e8f7b1f191dba421f012.jpg);
+}
+
+.pin_contenido_m3{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/9a/d9/31/9ad9319ab695faa4fded33cfd4c3d839.jpg);
+}
+
+.pin_contenido_g3{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/fe/99/0b/fe990b98ae9a0b5dd0840faf0b421a54.jpg);
+}
+
+.pin_contenido_p4{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/ed/6d/f2/ed6df2caac799587c87f887b11f9b05b.jpg);
+}
+
+.pin_contenido_m4{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/e5/69/0f/e5690ffc2b4a07cb5e5d8a46693b4df0.jpg);
+}
+
+.pin_contenido_g4{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/9b/6a/30/9b6a3074b002f7205f481ed72f62b86d.jpg);
+}
+
+.pin_contenido_p5{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/6f/d0/78/6fd078f0f5ce5b55c35e8f92d7dde57e.jpg);
+}
+
+.pin_contenido_m5{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/55/23/f0/5523f02cc4f0accac9935c3e49c5ec12.jpg);
+}
+
+.pin_contenido_g5{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/75/b4/4d/75b44d73f707ae44d6c59b213fbc4409.jpg);
+}
+
+.pin_contenido_p6{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/89/e7/aa/89e7aaffe120f872edf194a0e5fff66a.jpg);
+}
+
+.pin_contenido_m6{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/19/20/a9/1920a921fd94f899b57b067448e131f4.jpg);
+}
+
+.pin_contenido_g6{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/5e/cd/1a/5ecd1a706c4e510e398da99e5fd54ca9.jpg);
+}
+
+
+.pin_contenido_p7{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/55/a7/99/55a79935a471d7d4754f89fcb761a017.jpg);
+}
+
+.pin_contenido_m7{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/27/68/b6/2768b628b1038700b50530b45f664d18.jpg);
+}
+
+.pin_contenido_g7{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/b2/40/78/b24078b553935b6390929bb43dd8366d.jpg);
+}
+
+.pin_contenido_p8{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/df/58/ff/df58ff87a3a00bf2a7b541fdd8cfe62b.jpg);
+}
+
+.pin_contenido_m8{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/cf/73/c4/cf73c42f94f9c5c4cecbaf3820739454.jpg);
+}
+
+.pin_contenido_g8{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/03/5c/46/035c461ad8fd03306b1735b17de9421e.jpg);
+}
+
+
+
+/*PIN BOTONES*/
+.pin_botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones:hover {
+    /* Totalmente visible */
+    opacity: 0.7;
+}
+
+.Guardar{
+    background-color: red;
+    color: rgb(251, 251, 251);
+    text-align: end;
+    padding: 12px 15px;
+    margin-left: 133px;
+    margin-right: 10px;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+
+.botones_inferiores {
+    display: flex;
+    justify-content: end;
+    padding: 3px 12px;
+    
+}
+/* 
+align-content: center;
+    padding: 12px 15px;
+    margin: auto;
+    border-radius: 2rem;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 600; */
+
+.botones_inferiores ion-icon {
+    
+    background-color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 12px;
+    padding: 5px;
+    border-radius: 2rem;
+    /* margin-top: auto; */
+    /* margin-bottom: auto;    */
+    --ionicon-stroke-width: 50px;
+    color: rgb(118 118 118);
 }
 
 .pin_p{
@@ -70,18 +451,5 @@ nav {
 
 .pin_g {
     grid-row-end: span var(--pin_big);
-    min-height: auto;
 }
 
-/*PIN IMAGEN*/
-
-.pin_contenido {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-image: url(https://i.pinimg.com/564x/23/9e/9b/239e9b420260f6bfd7e4140cfd4b066e.jpg);
-}
-
-
-
-/*PIN BOTONES*/
